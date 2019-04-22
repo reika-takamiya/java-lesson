@@ -1,4 +1,4 @@
-package sho_0;
+package sho0;
 /**
  * 画面にHelloと表示して終了するプログラム
  */
