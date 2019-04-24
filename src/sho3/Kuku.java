@@ -22,7 +22,7 @@ public class Kuku {
         System.out.println("これから九九の問題を" + MAX_QUESTION + "問出題します。");
         /*
          *以下、問題を繰り返し表示し、ユーザからの回答を判断する。<br>
-         * そのあと、政党の数を数える。<br>
+         * そのあと、正答の数を数える。<br>
          */
         for (int i = 0; i < MAX_QUESTION; i++) {
             boolean ok = showQuestion(i + 1);
