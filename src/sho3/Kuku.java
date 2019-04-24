@@ -1,21 +1,23 @@
 package sho3;
 
-/**
- * 読解練習「九九練習プログラム」<br>
- * Kukuは、九九問題をランダムに10個表示してその正解数と正解率を表示するプログラムである。<br>
- *
- * @author 結城浩<br>
- * @copyright by Hiroshi Yuki.<br
- */
 import  java.io.*;
+
+/**
+ * 読解練習「九九練習プログラム」
+ * Kukuは、九九問題をランダムに10個表示してその正解数と正解率を表示するプログラムである。
+ *
+ * @author 結城浩
+ * @copyright by Hiroshi Yuki.
+ */
 public class Kuku {
     /** 表示する問題の個数 */
     public static  final  int MAX_QUESTION = 10;
     /**
-     * 九九の問題をMAX_QUESTION回繰り返して出題する。<br>
+     * 九九の問題をMAX_QUESTION回繰り返して出題する。
      * 最後に正答率を表示する。
      */
     public static void  main(String[] args) {
+
         int goodAnswers = 0;  //正答の個数
         System.out.println("これから九九の問題を" + MAX_QUESTION + "問出題します。");
         /*
@@ -38,11 +40,12 @@ public class Kuku {
         System.out.println("お疲れさま。");
     }
     /**
-     * showQuestionは九九の問題を一問出し、答えを待つ。<br>
-     * 正答，誤答の別を表示する<br>
+     * showQuestionは九九の問題を一問出し、答えを待つ。
+     * 正答，誤答の別を表示する
      * 正答の場合は true を返す。
      */
     public static  boolean showQuestion(int question) {
+        
         int x = (int)(Math.random() * 9) + 1;
         int y = (int)(Math.random() * 9) + 1;
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
