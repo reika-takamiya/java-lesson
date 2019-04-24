@@ -1,10 +1,12 @@
 package sho4;
 
 import java.io.*;
-;
 
+/**
+ * 傘プログラムの完成
+ */
 public class Kasa3 {
-    public static  void main(String[] args) {
+    public static void main(String[] args) {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         try {
             System.out.println("降水確率を入力してください。");
