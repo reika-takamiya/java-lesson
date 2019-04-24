@@ -5,8 +5,8 @@ package sho3;
  */
 public class Mondai1 {
     public static  void main(String[] args) {
-        long x = 300000L;
-        long y = 86400L;
-        System.out.println("光が一日に進む距離は" + (x * y) + "kmです。");
+        long light1 = 300000L;
+        long light2 = 86400L;
+        System.out.println("光が一日に進む距離は" + (light1 * light2) + "kmです。");
     }
 }
