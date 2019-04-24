@@ -1,20 +1,19 @@
 package sho3;
 
+import java.io.*;
+
 /**
  * 2人の名前と年齢を入力するとその人たちの年齢の平均を表示するプログラムを書く
  */
-import java.io.*;
-
 public class Mondai2 {
     public static void main(String[] args) {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         try {
-            String line;
             //1人目
             System.out.println("1人目の名前を入力してください。");
             String name1 = reader.readLine();
             System.out.println(name1 + "さんの年齢を入力してください。");
-            line = reader.readLine();
+            String line = reader.readLine();
             int age1 = Integer.parseInt(line);
             //2人目
             System.out.println("2人目の名前を入力してください。");
