@@ -15,15 +15,15 @@ public class Mondai3 {
         try {
             System.out.println("現在の時刻を入力してください(「時」のみで結構です)。");
             String line = reader.readLine();
-            int n = Integer.parseInt(line);
-            System.out.println("現在は" + n + "時です。");
-            if (0 <= n && n <= 11) {
+            int nowTime = Integer.parseInt(line);
+            System.out.println("現在は" + nowTime + "時です。");
+            if (0 <= nowTime && nowTime <= 11) {
                 System.out.println("おはようございます");
-            } else if (n == 12) {
+            } else if (nowTime == 12) {
                 System.out.println("お昼です。");
-            } else if (13 <= n && n <= 18) {
+            } else if (13 <= nowTime && nowTime <= 18) {
                 System.out.println("こんにちは。");
-            } else if (19 <= n && n <= 23) {
+            } else if (19 <= nowTime && nowTime <= 23) {
                 System.out.println("こんばんは。");
             } else {
                 System.out.println("時刻の範囲を超えています");
