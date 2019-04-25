@@ -11,11 +11,11 @@ public class Kasa3 {
         try {
             System.out.println("降水確率を入力してください。");
             String line = reader.readLine();
-            int n = Integer.parseInt(line);
-            System.out.println("降水確率は" + n + "%です。");
-            if (n < 0 || n > 100) {
+            int rainyPercent= Integer.parseInt(line);
+            System.out.println("降水確率は" + rainyPercent + "%です。");
+            if (rainyPercent < 0 || rainyPercent > 100) {
                 System.out.println("降水確率は0～100の間ですよ");
-            } else if (n >= 50) {
+            } else if (rainyPercent >= 50) {
                 System.out.println("傘を忘れずにね。");
             } else {
                 System.out.println("傘はいりません。");
