@@ -36,11 +36,8 @@ public class Mondai5 {
             } else {
                 System.out.println("どちらでもありません。");
             }
-        }
-            catch(IOException e) {
-                System.out.println(e);
-            } catch(NumberFormatException e) {
-                System.out.println("文字の形式が正しくありません。");
-            }
+        } catch (IOException e) {
+            System.out.println(e);
         }
     }
+}
