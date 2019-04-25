@@ -11,9 +11,9 @@ public class Kasa1 {
         try {
             System.out.println("降水確率を入力してください。");
             String line = reader.readLine();
-            int n = Integer.parseInt(line);
-            System.out.println("降水確率は" + n + "%です。");
-            if (n >= 50) {
+            int rainyPercent = Integer.parseInt(line);
+            System.out.println("降水確率は" + rainyPercent + "%です。");
+            if (rainyPercent >= 50) {
                 System.out.println("傘を忘れずにね。");
             } else {
                 System.out.println("傘はいりません。");
