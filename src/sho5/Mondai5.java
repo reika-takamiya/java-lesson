@@ -27,11 +27,14 @@ public class Mondai5 {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         try {
             System.out.println("飲み物は何が好きですか？");
+            System.out.println("1.オレンジジュース(a)");
+            System.out.println("2.コーヒー(b)");
+            System.out.println("1,2,のどちらかを選んでください(a,b,でも選べます)。");
             String line = reader.readLine();
-            char moji = line.charAt(0);
-            if (moji == '1' || moji == 'a') {
+            char userCharacterSelection = line.charAt(0);
+            if (userCharacterSelection == '1' || userCharacterSelection == 'a') {
                 System.out.println("オレンジジュースです。");
-            } else if (moji == '2' || moji == 'b') {
+            } else if (userCharacterSelection == '2' || userCharacterSelection == 'b') {
                 System.out.println("コーヒーです。");
             } else {
                 System.out.println("どちらでもありません。");
