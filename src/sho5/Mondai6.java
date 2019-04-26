@@ -43,8 +43,8 @@ public class Mondai6 {
             System.out.println("い＝コーヒー");
             System.out.println("う＝どちらでもない");
             System.out.println("あ、い、う、のどれかを選んでください。");
-            String kana = reader.readLine();
-            switch (kana) {
+            String userKanaSelection = reader.readLine();
+            switch (userKanaSelection) {
                 case "あ":
                     System.out.println("オレンジジュースです。");
                     break;
@@ -62,4 +62,3 @@ public class Mondai6 {
         }
     }
 }
-
