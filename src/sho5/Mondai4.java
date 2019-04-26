@@ -20,8 +20,8 @@ public class Mondai4 {
             System.out.println("4 どちらでもない");
             System.out.println("1,2,3,4のどれかを選んでください。");
             String line = reader.readLine();
-            int number = Integer.parseInt(line);
-            switch (number) {
+            int userNoSelction = Integer.parseInt(line);
+            switch (userNoSelction) {
                 case 1:
                     System.out.println("オレンジジュースです。");
                     break;
