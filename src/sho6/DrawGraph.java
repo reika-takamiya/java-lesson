@@ -5,10 +5,10 @@ package sho6;
  */
 public class DrawGraph {
     public static void main(String[] args) {
-        for (int number1 = 0; number1 < 10; number1++) {
-            System.out.println(number1 + ":");
-            for (int number2 = 0; number2 < number1; number2++) {
-                System.out.println("*");
+        for (int i = 0; i < 10; i++) {
+            System.out.println(i + ":");
+            for (int j = 0; j < i; j++) {
+                System.out.print("*");
             }
             System.out.println("");
         }
