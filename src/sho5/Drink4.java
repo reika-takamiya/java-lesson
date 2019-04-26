@@ -16,8 +16,8 @@ public class Drink4 {
             System.out.println("コーヒー(coffee)");
             System.out.println("どちらでもない(other)");
             System.out.println("orange,coffee,otherのどれかを選んでください。");
-            String moji = reader.readLine();
-            switch (moji) {
+            String userCharacterSelection = reader.readLine();
+            switch (userCharacterSelection) {
                 case "orange":
                     System.out.println("オレンジジュースです。");
                     break;
