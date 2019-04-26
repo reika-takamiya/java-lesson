@@ -31,13 +31,13 @@ public class Mondai8 {
             System.out.println("c　どちらでもない");
             System.out.println("a,b,cのどれかを選んでください。");
             String line = reader.readLine();
-            char alphabet;
+            char userAlphabetSelection;
             if (line.length() > 0) {
-                alphabet = line.charAt(0);
+                userAlphabetSelection = line.charAt(0);
             } else {
-                alphabet = 'c';
+                userAlphabetSelection = 'c';
             }
-            switch (alphabet) {
+            switch (userAlphabetSelection) {
                 case 'a':
                     System.out.println("オレンジジュースです。");
                     break;
@@ -56,5 +56,3 @@ public class Mondai8 {
         }
     }
 }
-
-
