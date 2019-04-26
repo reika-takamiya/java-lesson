@@ -17,8 +17,8 @@ public class Drink1 {
             System.out.println("3 どちらでもない");
             System.out.println("1,2,3のどれかを選んでください。");
             String line = reader.readLine();
-            int number = Integer.parseInt(line);
-            switch (number) {
+            int userNoSelection = Integer.parseInt(line);
+            switch (userNoSelection) {
                 case 1:
                     System.out.println("オレンジジュースです。");
                     break;
