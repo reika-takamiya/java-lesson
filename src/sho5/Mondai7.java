@@ -17,8 +17,8 @@ public class Mondai7 {
         try {
             System.out.println("0～6の数字を入力してください。対応した曜日を表示します。");
             String line = reader.readLine();
-            int number = Integer.parseInt(line);
-            switch (number) {
+            int userNoSelection = Integer.parseInt(line);
+            switch (userNoSelection) {
                 case 0:
                     System.out.println("日曜日");
                     break;
