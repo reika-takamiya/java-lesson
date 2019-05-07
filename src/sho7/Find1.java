@@ -4,6 +4,9 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+/**
+ * 文字列の検索
+ */
 public class Find1 {
     public static void main(String[] args) {
         if (args.length != 1) {
