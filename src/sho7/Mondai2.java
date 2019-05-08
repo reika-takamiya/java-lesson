@@ -24,7 +24,7 @@ public class Mondai2 {
                 System.out.print("*");
                 j++;
             }
-            System.out.println("");
+            System.out.println();
             i++;
         }
     }
