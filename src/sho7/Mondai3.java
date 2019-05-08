@@ -16,7 +16,6 @@ public class Mondai3 {
     public static void main(String[] args) {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         try {
-            String line;
             //ルール１
             System.out.println("<!DOCTYPE html>");
             System.out.println("<html>");
@@ -24,6 +23,7 @@ public class Mondai3 {
             System.out.println("<title>My page</title>");
             System.out.println("</head>");
             System.out.println("<body>");
+            String line;
             while ((line = reader.readLine()) != null) {
                 if (line.startsWith("■")) {
                     //ルール３
