@@ -27,11 +27,11 @@ import java.io.InputStreamReader;
  */
 public class Mondai4 {
     public static void main(String[] args) {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         try {
+            BufferedReader reader = new BufferedReader(new InputStreamReader(System.in, "UTF-8"));
             String line;
             while ((line = reader.readLine()) != null) {
-                if (line.endsWith("{") || !line.endsWith("}")) {
+                if (line.endsWith("{") || line.endsWith("}")) {
                     System.out.println(line);
                 }
             }
