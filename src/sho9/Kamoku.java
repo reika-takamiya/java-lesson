@@ -8,9 +8,9 @@ public class Kamoku {
     int score;   //点数
 
     //科目の作成
-    public Kamoku(String namae, int tensuu) {
-        this.name = namae;
-        this.score = tensuu;
+    public Kamoku(String name, int score) {
+        this.name = name;
+        this.score = score;
     }
 
     //科目の文字列表現
