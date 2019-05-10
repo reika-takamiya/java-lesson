@@ -14,12 +14,12 @@ public class Mondai9 {
         printArray(array);
     }
 
-    public static void printArray(int[][] a) {
+    public static void printArray(int[][] array) {
         System.out.println("{");
-        for (int i = 0; i < a.length; i++) {
+        for (int i = 0; i < array.length; i++) {
             System.out.print("  {");
-            for (int j = 0; j < a[i].length; j++) {
-                System.out.print(a[i][j] + ",");
+            for (int j = 0; j < array[i].length; j++) {
+                System.out.print(array[i][j] + ",");
             }
             System.out.println("},");
         }
