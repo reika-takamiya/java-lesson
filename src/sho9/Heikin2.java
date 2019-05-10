@@ -9,7 +9,7 @@ public class Heikin2 {
         score[0] = 63;
         score[1] = 90;
         score[2] = 75;
-        double heikinScore = ((score[0] + score[1] + score[2]) / 3);
+        double heikinScore = ((score[0] + score[1] + score[2]) / 3.0);
 
         System.out.println("国語は" + score[0] + "点");
         System.out.println("算数は" + score[1] + "点");
