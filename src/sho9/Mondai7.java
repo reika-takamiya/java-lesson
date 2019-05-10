@@ -5,12 +5,12 @@ package sho9;
  */
 public class Mondai7 {
     public static void main(String[] args) {
-        int[] data = {31, 41, 59, 26, 53, 58, 97, 93, 23, 84};
-        int maxData = data[0];
+        int[] array = {31, 41, 59, 26, 53, 58, 97, 93, 23, 84};
+        int maxNumber = array[0];
 
-        for (int i = 0; i < data.length; i++) {
-            maxData = Math.max(maxData, data[i]);
+        for (int i = 0; i < array.length; i++) {
+            maxNumber = Math.max(maxNumber, array[i]);
         }
-        System.out.println("最大値は" + maxData + "です。");
+        System.out.println("最大値は" + maxNumber + "です。");
     }
 }
