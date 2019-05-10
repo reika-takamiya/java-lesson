@@ -10,6 +10,7 @@ public class Discount2 {
         halfPrice = halve(originalPrice);
         System.out.println("元の値段が" + originalPrice + "円なら、半額だと" + halfPrice + "円になります。");
     }
+
     public static int halve(int n) {
         return n / 2;
     }
