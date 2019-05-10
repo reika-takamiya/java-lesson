@@ -15,7 +15,7 @@ public class Heikin7 {
         int sum = 0;
         for (int i = 0; i < kamoku.length; i++) {
             System.out.println(kamoku[i]);
-            sum += kamoku[i].tensuu;
+            sum += kamoku[i].score;
         }
         double heikinScore = (double) sum / kamoku.length;
         System.out.println("平均点は" + heikinScore + "点");
