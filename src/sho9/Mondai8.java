@@ -12,9 +12,9 @@ public class Mondai8 {
             for (int j = i + 1; j < data.length; j++) {
                 if (data[i] > data[j]) {
                     //交換
-                    int a = data[i];
+                    int temp = data[i];
                     data[i] = data[j];
-                    data[j] = a;
+                    data[j] = temp;
                 }
             }
         }
