@@ -9,12 +9,12 @@ public class Mondai2 {
             printGraph(n * n);
         }
     }
+
     public static void printGraph(int squareResult) {
-        int i;
-        for (i = 0; i < squareResult; i++) {
+        for (int i = 0; i < squareResult; i++) {
             System.out.print("*");
         }
-        System.out.println("");
+        System.out.println();
     }
 }
 
