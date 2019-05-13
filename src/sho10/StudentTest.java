@@ -3,7 +3,6 @@ package sho10;
 /**
  * 合計点の計算
  */
-
 public class StudentTest {
     public static void main(String[] args) {
         Student[] data = {
