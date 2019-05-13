@@ -8,7 +8,7 @@ public class Kamoku {
      * コンストラクタ
      *
      * @param name  科目名
-     * @param score 　各科目の点数
+     * @param score 各科目の点数
      */
     public Kamoku(String name, int score) {
         this.name = name;
