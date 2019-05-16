@@ -2,7 +2,7 @@ package sho11;
 
 /**
  * list11-4
- * コンストラクタの中化からメソッドを呼び出す
+ * コンストラクタの中からメソッドを呼び出す
  */
 public class Rectangle4 {
     int width;
