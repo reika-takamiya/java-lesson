@@ -17,14 +17,8 @@ public class Rectangle23 {
     }
 
     void setSize(int width, int height) {
-        if (width < 0) {
-            width = 0;
-        }
-        if (height < 0) {
-            height = 0;
-        }
-        this.width = width;
-        this.height = height;
+        this.width = width < 0 ? 0 : width;
+        this.height = height < 0 ? 0 : height;
     }
 
     int getArea() {
@@ -40,13 +34,5 @@ public class Rectangle23 {
         System.out.println("r2.width= " + r2.width);
         System.out.println("r2.height = " + r2.height);
         System.out.println("r2 getArea = " + r2.getArea());
-
-        /* 試し書きなので気にしないでください。
-        Rectangle23 r3 = new Rectangle23();
-        r3.setSize(30, 90);
-        System.out.println("r3.width= " + r3.width);
-        System.out.println("r3.height = " + r3.height);
-        System.out.println("r3 getArea = " + r3.getArea());
-        */
     }
 }
