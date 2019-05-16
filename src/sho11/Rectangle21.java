@@ -32,14 +32,11 @@ public class Rectangle21 {
         this.width = width;
         this.height = height;
     }
+
     public boolean equals(Rectangle21 rectangle) {
         if (rectangle == null) {
             return false;
-        } else if (width == rectangle.width && height == rectangle.height) {
-            return true;
-        } else {
-            return false;
         }
-
+        return width == rectangle.width && height == rectangle.height;
     }
 }
