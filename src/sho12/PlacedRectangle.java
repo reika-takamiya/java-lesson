@@ -1,7 +1,5 @@
 package sho12;
 
-//import sho10.Rectangle;
-
 /**
  * 問題12－5
  *
