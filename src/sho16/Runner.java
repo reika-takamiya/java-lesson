@@ -20,11 +20,12 @@ public class Runner extends Thread {
 
     public void doCommand() {
         System.out.println("aaa");
-        stopRunning();
     }
 
     public static void main(String[] args) {
-        new Runner().start();
+        Runner runner = new Runner();
+        runner.start();
+        runner.stopRunning();
     }
 }
 
