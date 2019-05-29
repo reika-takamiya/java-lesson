@@ -1,13 +1,12 @@
 package sho17;
 
+import static java.lang.System.out;
+import static java.lang.Math.max;
+
 /**
  * list17-11
  * java.lang.Math.maxをスタティックにimportした例
  */
-
-import static java.lang.System.out;
-import static java.lang.Math.max;
-
 public class Max {
     public static void main(String[] args) {
         int x = 45;
