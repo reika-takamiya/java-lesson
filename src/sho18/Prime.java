@@ -3,7 +3,6 @@ package sho18;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.PrintStream;
 import java.io.PrintWriter;
 
 /**
@@ -11,7 +10,7 @@ import java.io.PrintWriter;
  * ファイル名を指定すると、そのファイルに1000より小さい素数の表を書き出すプログラムを作成。
  */
 public class Prime {
-    static final int MAX_PRIME = 1000;
+    private static final int MAX_PRIME = 1000;
 
     public static void main(String[] args) {
         if (args.length != 1) {
@@ -20,14 +19,14 @@ public class Prime {
             System.exit(0);
         }
         String filename = args[0];
-        try (PrintWriter writer = new PrintWriter(new BufferedWriter(new FileWriter(filename)));){
+        try (PrintWriter writer = new PrintWriter(new BufferedWriter(new FileWriter(filename)));) {
             writePrime(writer);
         } catch (IOException e) {
             System.out.println(e);
         }
     }
 
-    public static void writePrime(PrintWriter writer) {
+    private static void writePrime(PrintWriter writer) {
         boolean[] prime = new boolean[MAX_PRIME];
         for (int n = 0; n < MAX_PRIME; n++) {
             prime[n] = true;
