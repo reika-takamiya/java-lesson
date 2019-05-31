@@ -3,9 +3,7 @@ package sho18;
 import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.InputStreamReader;
 
 /**
@@ -23,18 +21,14 @@ public class FindFile {
         }
         String findString = args[0];
         String fileName = args[1];
-        try {
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(fileName), "UTF-8"))) {
             String line;
-            int linenumber = 1;
-            BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(fileName), "UTF-8"));
-            while ((line = reader.readLine()) != null) {
+            for (int linenumber = 1; (line = reader.readLine()) != null; linenumber++) {
                 int n = line.indexOf(findString);
                 if (n >= 0) {
                     System.out.println(linenumber + ":" + line);
                 }
-                linenumber++;
             }
-            reader.close();
         } catch (FileNotFoundException e) {
             System.out.println(fileName + "が見つかりません。");
         } catch (IOException e) {
